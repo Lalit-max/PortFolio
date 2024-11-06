@@ -74,6 +74,36 @@ header nav ul li a.active::after {
     transform: scaleX(1); /* Show underline on hover or active */
     transform-origin: left;
 }
+/* Styles for larger screens (desktop) */
+.container {
+    display: flex;
+    flex-direction: row;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  
+  /* Styles for smaller screens (mobile) */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      padding: 0 1rem; /* Add padding for mobile */
+    }
+  
+    /* Adjust font sizes and button sizes for mobile */
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    button {
+      width: 100%;
+      padding: 0.8rem;
+    }
+  }
+  
 
 
 #home {
